@@ -470,6 +470,8 @@
 
 	.alignleft { text-align: left; }
 
+	.alignjustify { text-align: justify; }
+
 	.alignright { text-align: right; }
 
 	.floatleft { float: left; }
