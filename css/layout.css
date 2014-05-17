@@ -1,0 +1,899 @@
+/*
+* Alexandria V1.0
+* Copyright 2014, Limitless LLC
+* www.limitless.ma
+*/
+
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+		/* #Header
+		================================================== */
+
+		header {
+			background-color: #000000 !important;
+			height: 70px;
+		}
+
+		header .logo {
+			position: absolute;
+			height: 40px;
+			width: 50%;
+			left: 25px;
+			top: 15px;
+		}
+
+		header .menu {
+			display: block;
+			position: absolute;
+			right: 25px;
+			top: 25px;
+		}
+
+		header .navigation {
+			background-color: #000000 !important;
+			display: none;
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+
+		header .navigation ul {
+			display: block;
+		}
+
+		header .navigation li {
+			color: #ffffff;
+			font-family: "Montserrat";
+			font-weight: 400;
+			font-size: 24px;
+			display: block;
+			margin: 0px auto;
+			padding: 8px 5px;
+			text-align: center;
+		}
+
+		header .navigation li:last-child {
+			border-bottom: none;
+		}
+
+		/* #Works
+		================================================== */
+
+		.works .grid .work, .works .grid .info, .works .grid img {
+			height: 254.75px !important;
+			width: 254.75px !important;
+		}
+
+		/* Project
+		================================================== */
+
+		.project .entry-title {
+			margin-top: 0px;
+		}
+
+		.project .entry-title a { 
+			line-height: 36px;
+		}
+
+		.project .entry-meta {
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+
+		.project .entry-thumbnail {
+			margin-bottom: 40px;
+		}
+
+		.project .post {
+			padding-bottom: 20px;
+		}
+
+		.project .info .title {
+			margin-bottom: 0px;
+		}
+
+		.project .info .item {
+			float: left;
+			margin-right: 10px;
+		}
+
+		/* Project Preview
+		================================================== */
+
+		.project-preview .close {
+			margin-bottom: 80px;
+		}
+
+		.project-preview .media {
+			float: none;
+		}
+
+		.project-preview .info {
+			display: inline-block;
+			float: none;
+			margin-top: 20px;
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		.project-preview .info .subtitle {
+			margin-bottom: 0px;
+		}
+
+		.project-preview .info .devider {
+			margin-left: auto;
+		}
+
+		.project-preview .info .more {
+			float: none;
+		}
+
+		/* #Services
+		================================================== */
+
+		.services .service .title {
+			margin-bottom: 20px;
+		}
+
+		.services .service .text {
+			margin-bottom: 10px;
+		}
+
+
+		/* #Blog
+		================================================== */
+
+		.blog .post {
+			margin-bottom: 50px;
+			padding-bottom: 48px;
+		}
+
+		.blog .post .entry-thumbnail img {
+			height: 237px;
+			width: 508px;
+		}
+
+		.blog .post .entry-thumbnail iframe {
+			height: 284px;
+			width: 508px;
+		}
+
+		.blog .post .entry-title {
+			margin-top: 5px;
+		}
+
+		.blog .post .entry-title a {
+			font-size: 18px;
+		}
+
+		.blog .post .entry-meta {
+			margin-top: 12px;
+		}
+
+		.blog .post .entry-meta span {
+			font-size: 10px;
+			letter-spacing: 0.1px;
+		}
+
+		.blog .post .entry-meta span:after {
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+
+		.blog .sidebar {
+			padding-left: 20px;
+		}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+		/* #Basics
+		================================================== */
+		body {
+			
+		}
+
+		h1 { font-size: 36px; line-height: 56px; margin-bottom: 8px; }
+		h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+		h3 { font-size: 24px; line-height: 34px; margin-bottom: 7px; }
+		h4 { font-size: 20px; line-height: 30px; margin-bottom: 4px; }
+		h5 { font-size: 17px; line-height: 24px; }
+		h6 { font-size: 14px; line-height: 21px; }
+
+		.offset {
+			padding: 100px 0px;
+		}
+
+		.cover .title {
+			font-size: 30px;
+		}
+
+		.cover .subtitle {
+			font-size: 14px;
+		}
+
+		.cover .devider {
+			margin-bottom: 20px;
+		}
+
+		/* #Header
+		================================================== */
+
+		header {
+			background-color: #000000 !important;
+			height: 70px;
+		}
+
+		header .logo {
+			position: absolute;
+			height: 40px;
+			width: 50%;
+			left: 10px;
+			top: 15px;
+		}
+
+		header .menu {
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 25px;
+		}
+
+		header .navigation {
+			background-color: #000000 !important;
+			display: none;
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+
+		header .navigation ul {
+			display: block;
+		}
+
+		header .navigation li {
+			color: #ffffff;
+			font-family: "Montserrat";
+			font-weight: 400;
+			font-size: 18px;
+			display: block;
+			margin: 0px auto;
+			padding: 8px 5px;
+			text-align: center;
+		}
+
+		header .navigation li:last-child {
+			border-bottom: none;
+		}
+
+
+		/* #Home
+		================================================== */
+
+		.home .overlay {
+			padding-top: 20px !important;
+		}
+
+		.home .title {
+			margin-bottom: 15px;
+		}
+
+		.home .subtitle {
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+
+		.home button.welcome {
+			margin-top: 40px;
+		}
+
+		/* #About
+		================================================== */
+
+		.about .client {
+			margin: 40px 0px;
+		}
+
+		/* #Works
+		================================================== */
+
+		.works .grid {
+			padding-top: 50px !important; 
+		}
+
+		.works .filter ul {
+			margin-bottom: 50px;
+		}
+
+		.works .filter li {
+			padding: 30px 10px 31px;
+		}
+
+		.works .grid .work, .works .grid .info, .works .grid img {
+			height: 420px !important;
+			width: 420px !important;
+		}
+
+		.works .quote {
+			margin-bottom: 100px;
+		}
+
+		.works .quote:last-child {
+			margin-bottom: 0px;
+		}
+
+		/* Project
+		================================================== */
+
+		.project .entry-title {
+			margin-top: 0px;
+		}
+
+		.project .entry-title a { 
+			line-height: 36px;
+		}
+
+		.project .entry-meta {
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+
+		.project .entry-thumbnail {
+			margin-bottom: 40px;
+		}
+
+		.project .post {
+			padding-bottom: 20px;
+		}
+
+		.project .info .title {
+			margin-bottom: 0px;
+		}
+
+		.project .info .item {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.project .links .back {
+			display: none;
+		}
+
+
+		/* Project Preview
+		================================================== */
+
+		.project-preview {
+			padding: 60px 0px !important;
+		}
+
+		.project-preview .close {
+			margin-bottom: 60px;
+		}
+
+		.project-preview .media {
+			position: relative;
+			text-align: center;
+			padding-right: 0px;
+		}
+
+		.project-preview .media .flex-control-nav {
+			bottom: 15px;
+		}
+
+		.project-preview img, .project-preview video, .project-preview iframe {
+			height: 315px;
+			width: 420px;
+		}
+
+		.project-preview video {
+			margin-top: 0px;
+		}
+
+		.project-preview .info {
+			display: inline-block;
+			float: none;
+			margin-top: 20px;
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		.project-preview .info .subtitle {
+			margin-bottom: 0px;
+		}
+
+		.project-preview .info .devider {
+			margin-left: auto;
+		}
+
+		.project-preview .info .more {
+			float: none;
+		}
+		/* #Services
+		================================================== */
+
+		.services .grid .filter {
+			display: none;
+		}
+
+		.services .service {
+			padding: 70px 0px;
+			text-align: center !important;
+		}
+
+		.services .image, .services .info {
+			padding: 30px 0px !important;
+		}
+
+		/* #History
+		================================================== */
+	
+		.history .milestone .image {
+			padding-right: 0px;
+		}
+
+		.history .milestone .info {
+			padding-left: 0px;
+			text-align: center !important;
+		}
+
+		.history .milestone .info .devider {
+			margin-left: auto;
+		}
+
+		.history .milestone .info .text {
+			text-align: center;
+		}
+
+		.history .milestone .info .more {
+			float: none;
+		}
+
+		.history .flex-control-nav li:after {
+			width: 20px;
+		}
+
+		/* #Blog
+		================================================== */
+
+		.blog .post {
+			margin-bottom: 50px;
+			padding-bottom: 48px;
+			text-align: center;
+		}
+
+		.blog .post .entry-thumbnail img {
+			height: 140px;
+			width: 300px;
+		}
+
+		.blog .post .entry-thumbnail iframe {
+			height: 168px;
+			width: 300px;
+		}
+
+		.blog .post .entry-title {
+			margin-top: 5px;
+		}
+
+		.blog .post .entry-title a {
+			font-size: 18px;
+		}
+
+		.blog .post .entry-meta {
+			margin-top: 12px;
+		}
+
+		.blog .post .entry-meta span {
+			font-size: 10px;
+			letter-spacing: 0.1px;
+		}
+
+		.blog .post .entry-meta span:after {
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+
+		.blog .sidebar {
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: center;
+		}
+
+		/* #Contact
+		================================================== */
+
+		.contact .info {
+			margin-bottom: 0px;
+			margin-top: 25px;
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		/* #Footer
+		================================================== */
+		
+		footer .social li {
+			background-size: 12px 12px;
+			border-radius: 30px;
+			height: 36px;
+			width: 36px;
+		}
+
+
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		/* #Basics
+		================================================== */
+		body {
+			
+		}
+
+		h1 { font-size: 36px; line-height: 56px; margin-bottom: 8px; }
+		h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+		h3 { font-size: 24px; line-height: 34px; margin-bottom: 7px; }
+		h4 { font-size: 20px; line-height: 30px; margin-bottom: 4px; }
+		h5 { font-size: 17px; line-height: 24px; }
+		h6 { font-size: 14px; line-height: 21px; }
+
+		.offset {
+			padding: 100px 0px;
+		}
+
+		.cover .title {
+			font-size: 30px;
+		}
+
+		.cover .subtitle {
+			font-size: 14px;
+		}
+
+		.cover .devider {
+			margin-bottom: 20px;
+		}
+
+		/* #Header
+		================================================== */
+
+		header {
+			background-color: #000000 !important;
+			height: 70px;
+		}
+
+		header .logo {
+			position: absolute;
+			height: 40px;
+			width: 50%;
+			left: 10px;
+			top: 15px;
+		}
+
+		header .menu {
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 25px;
+		}
+
+		header .navigation {
+			background-color: #000000 !important;
+			display: none;
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+
+		header .navigation ul {
+			display: block;
+		}
+
+		header .navigation li {
+			color: #ffffff;
+			font-family: "Montserrat";
+			font-weight: 400;
+			font-size: 18px;
+			display: block;
+			margin: 0px auto;
+			padding: 8px 5px;
+			text-align: center;
+		}
+
+		header .navigation li:last-child {
+			border-bottom: none;
+		}
+
+
+		/* #Home
+		================================================== */
+
+		.home .overlay {
+			padding-top: 20px !important;
+		}
+
+		.home .title {
+			margin-bottom: 15px;
+		}
+
+		.home .subtitle {
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+
+		.home button.welcome {
+			margin-top: 40px;
+		}
+
+		/* #About
+		================================================== */
+
+		.about .client {
+			margin: 40px 0px;
+		}
+
+		/* #Works
+		================================================== */
+
+		.works .grid {
+			padding-top: 50px !important; 
+		}
+
+		.works .filter {
+			display: none;
+		}
+
+		.works .grid .work, .works .grid .info, .works .grid img {
+			height: 300px !important;
+			width: 300px !important;
+		}
+
+		.works .quote {
+			margin-bottom: 100px;
+		}
+
+		.works .quote:last-child {
+			margin-bottom: 0px;
+		}
+
+		/* Project
+		================================================== */
+
+		.project .entry-title {
+			margin-top: 0px;
+		}
+
+		.project .entry-title a { 
+			line-height: 36px;
+		}
+
+		.project .entry-meta {
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+
+		.project .entry-thumbnail {
+			margin-bottom: 40px;
+		}
+
+		.project .post {
+			padding-bottom: 20px;
+		}
+
+		.project .info .title {
+			margin-bottom: 0px;
+		}
+
+		.project .info .item {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.project .links .back {
+			display: none;
+		}
+
+		/* Project Preview
+		================================================== */
+
+		.project-preview {
+			padding: 40px 0px !important;
+		}
+
+		.project-preview .close {
+			margin-bottom: 40px;
+		}
+
+		.project-preview .media {
+			position: relative;
+			text-align: center;
+			padding-right: 0px;
+		}
+
+		.project-preview .media .flex-control-nav {
+			bottom: 15px;
+		}
+
+		.project-preview img, .project-preview video, .project-preview iframe {
+			height: 225px;
+			width: 300px;
+		}
+
+		.project-preview video {
+			margin-top: 0px;
+		}
+
+		.project-preview .info {
+			display: inline-block;
+			float: none;
+			margin-top: 20px;
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		.project-preview .info .subtitle {
+			margin-bottom: 0px;
+		}
+
+		.project-preview .info .devider {
+			margin-left: auto;
+		}
+
+		.project-preview .info .more {
+			float: none;
+		}
+
+		/* #Services
+		================================================== */
+
+		.services .grid .filter {
+			display: none;
+		}
+
+		.services .service {
+			padding: 70px 0px;
+			text-align: center !important;
+		}
+
+		.services .image, .services .info {
+			padding: 30px 0px !important;
+		}
+
+		/* #History
+		================================================== */
+	
+		.history .milestone .image {
+			padding-right: 0px;
+		}
+
+		.history .milestone .info {
+			padding-left: 0px;
+			text-align: center !important;
+		}
+
+		.history .milestone .info .devider {
+			margin-left: auto;
+		}
+
+		.history .milestone .info .text {
+			text-align: center;
+		}
+
+		.history .milestone .info .more {
+			float: none;
+		}
+
+		.history .flex-control-nav li:after {
+			width: 20px;
+		}
+
+		/* #Blog
+		================================================== */
+
+		.blog .post {
+			margin-bottom: 50px;
+			padding-bottom: 48px;
+			text-align: center;
+		}
+
+		.blog .post .entry-thumbnail img {
+			height: 140px;
+			width: 300px;
+		}
+
+		.blog .post .entry-thumbnail iframe {
+			height: 168px;
+			width: 300px;
+		}
+
+		.blog .post .entry-title {
+			margin-top: 5px;
+		}
+
+		.blog .post .entry-title a {
+			font-size: 18px;
+		}
+
+		.blog .post .entry-meta {
+			margin-top: 12px;
+		}
+
+		.blog .post .entry-meta span {
+			font-size: 10px;
+			letter-spacing: 0.1px;
+		}
+
+		.blog .post .entry-meta span:after {
+			margin-left: 5px;
+			margin-right: 3px;
+		}
+
+		.blog .sidebar {
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: center;
+		}
+
+		/* #Contact
+		================================================== */
+
+		.contact .info {
+			margin-bottom: 0px;
+			margin-top: 25px;
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		/* #Footer
+		================================================== */
+		
+		footer .social li {
+			background-size: 12px 12px;
+			border-radius: 30px;
+			height: 36px;
+			width: 36px;
+		}
+
+	}
+
