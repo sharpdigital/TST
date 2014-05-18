@@ -221,6 +221,10 @@
 		position: relative;
 	}
 
+	.about .reduce2nd {
+		padding-top: 0px !important;
+	}
+
 	.about .team {
 		padding-top: 0px !important;
 	}
