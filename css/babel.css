@@ -28,7 +28,7 @@
 
 /* #Header
 ================================================== */
-	
+
 	header {
 		background-color: rgba(0, 0, 0, 1);
 		height: 80px;
@@ -203,7 +203,7 @@
 ================================================== */
 
 	.about {
-		
+
 	}
 
 	.about .cover {
@@ -219,6 +219,21 @@
 		float: none;
 		margin: 0px auto;
 		position: relative;
+	}
+
+	.about .middle {
+		padding-top: 0px !important;
+	}
+
+	.justify {
+		text-align: justify;
+	}
+
+	ol ol {
+		list-style-type: lower-alpha;
+	}
+	.gender {
+		display: inline-block;
 	}
 
 	.about .reduce2nd {
@@ -355,7 +370,7 @@
 	}
 
 	.works .grid {
-		padding-top: 0px !important; 
+		padding-top: 0px !important;
 	}
 
 	.works .filter {
@@ -490,7 +505,7 @@
 ================================================== */
 
 	.project {
-		
+
 	}
 
 	.project .offset {
@@ -771,7 +786,7 @@
 ================================================== */
 
 	.history {
-		
+
 	}
 
 	.history .cover {
@@ -1001,7 +1016,7 @@
 	}
 
 	.blog .widget .search {
-		
+
 	}
 
 	.blog .widget .search input {
@@ -1025,7 +1040,7 @@
 ================================================== */
 
 	.article {
-		
+
 	}
 
 	.article .offset {
@@ -1273,8 +1288,12 @@
 		text-align: left;
 	}
 
+	.break {
+		word-break: break-all;
+	}
+
 	.contact .title, .contact .subtitle {
-		
+
 	}
 
 	.contact .subtitle {

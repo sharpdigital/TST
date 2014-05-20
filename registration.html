@@ -7,7 +7,7 @@
 	<!-- Basic
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Babel - Contact</title>
+	<title>TST - Registration</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="@dontlikelimits">
@@ -97,6 +97,7 @@
 						<div class="devider"></div>
 						
 					</div> 
+
 					<!-- container -->
 
 				</div>
@@ -121,20 +122,24 @@
 						</div>
 
 						<form method="post" action="contact.php">
-
 							<p>
-								<label for="firstname">First name<span>*</span></label>
-					        	<input type="text" name="firstname" id="firstname" required/>
-							</p>
+								<label for="firstname">First Name<span>*</span></label>
+                				<input type="text" id="firstname" name="firstname" autofocus required>
+                			</p>
 
-							<p>
-								<label for="lastname">Last name<span>*</span></label>
-					        	<input type="text" name="lastname" id="lastname" required/>
-							</p>
+                			<p>
+                				<label for="lastname">Last Name<span>*</span></label>
+                				<input type="text" id="lastname" name="lastname" required>
+                			</p>
 
-							<p>
-								<label for="dob">Date of Birth<span>*</span></label>
-					        	<input type="text" name="dob" id="dob" required/>
+                			<p>
+                				<label for="DateofBirth">Date of Birth<span>*</span></label>
+                				<input type="text" id="DateofBirth" name="DateofBirth" required>
+                			</p>
+
+              				<p>
+              					<label for="email">Email<span>*</span></label>
+								<input type="email" id="email" required>
 							</p>
 
 							<p>
@@ -144,30 +149,23 @@
 							</p>
 
 							<p>
-								<label for="address">Correspondence Address</label>
+								<label for="address">Correspondence Address<span>*</span></label>
 								<textarea name="address" id="address" cols="45" rows="6" required></textarea>
 							</p>
 
 							<p>
 								<label for="idno">Identification Number<span>*</span></label>
-					        	<input type="text" name="idno" id="idno" required/>
+					        	<input type="text" name="idno" id="idno" required>
 							</p>
-
-							<p>
-								<label for="email">Email<span>*</span></label>
-					        	<input type="text" name="email" id="email" required/>
-							</p>
-
 							<p>
 								<label>Course you are applieng for:</label>
 					        	<label><input checked type="radio" name="coursetype" id="othmlevel4" placeholder="othmlevel4" />OTHM Level 4 Professional Certificate</label>
 					        	<label><input type="radio" name="coursetype" id="othmlevel5" placeholder="othmlevel5" />OTHM Level 5 Professional Diploma</label>
 					        	<label><input type="radio" name="coursetype" id="othmlevel6" placeholder="othmlevel6" />OTHM Level 6 Professional Diploma</label>
 							</p>
-
 							<p>
-								<label for="experience">Qualifications/ Work Experience</label>
-								<textarea name="experience" id="experience" cols="45" rows="10" required></textarea>
+								<label for="work">Qualification/Work Experience<span>*</span></label>
+								<textarea name="message" id="work" cols="45" rows="10" required></textarea>
 							</p>
 
 							<p>
@@ -175,12 +173,11 @@
 					        	<label><input checked type="radio" name="levelofenglish" id="intermediate" placeholder="intermediate" />Intermediate</label>
 					        	<label><input type="radio" name="levelofenglish" id="advanced" placeholder="advanced" />Advanced</label>
 							</p>
-
+							
 							<p>
-								<label for="reason">Why do you want to apply to this course?</label>
-								<textarea name="reason" id="reason" cols="45" rows="10" required></textarea>
+								<label for="reason">Why do you want to apply for this course?<span>*</span></label>
+								<textarea name="message" id="reason" cols="45" rows="10" required></textarea>
 							</p>
-
 
 
 							<p>
@@ -192,10 +189,10 @@
 					        	<label><input type="radio" name="media" id="brochure" placeholder="brochure" />Brochure</label>
 					        </p>
 
-							<p>
-								<input type="checkbox" name="agreed">On registering for an ISTHI Programme I acknowledge that I have read, understood and agree to abide by the full (i) General Terms and Conditions. Registration on an OTHM programme constitutes full and irrevocable acceptance of our <a href="www.TourismSchoolToledo.com/admissions.html">Terms and Conditions</a>.
+
+							<p class="justify">
+								<input type="checkbox"  name="agreed" required>On registering for an ISTHI Programme I acknowledge that I have read, understood and agree to abide by the full (i) General Terms and Conditions. Registration on an OTHM programme constitutes full and irrevocable acceptance of our <a href="termsandconditions.html">Terms and Conditions</a>.
 							</p>
-							
 
 					        <p>
 					        	<button id="submit">Submit</button>
@@ -218,12 +215,11 @@
 						<div class="info">
 
 							<h6 class="title">Help</h6>
-							<h6 class="subtitle">Need help? Don’t hestiate to ask us. Email us directly.<br>info@tourismschooltoledo.com</h6>
+							<h6 class="subtitle">Need help? Don’t hestiate to ask us, Email us directly or call us.<br><a href="mailto:info@tourismschooltoledo.com">info@tourismschooltoledo.com</a></h6>
 
 						</div>
 
 					</div>
-
 
 				</div>
 				<!-- container -->
@@ -245,8 +241,8 @@
 					<div class="sixteen columns">
 						<div class="top"></div>
 					</div>
-					
-				</div> 
+
+				</div>
 				<!-- container -->
 
 				<!-- container -->
@@ -269,8 +265,8 @@
 					<div class="sixteen columns">
 						<h6 class="copyright">Copyright © 2014 Babel</h6>
 					</div>
-					
-				</div> 
+
+				</div>
 				<!-- container -->
 
 			</div>
