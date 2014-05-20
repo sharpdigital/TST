@@ -225,6 +225,21 @@
 		padding-top: 0px !important;
 	}
 
+	.about .middle {
+		padding-top: 0px !important;
+	}
+
+	.justify {
+		text-align: justify;
+	}
+
+	ol ol {
+		list-style-type: lower-alpha;
+	}
+	.gender {
+		display: inline-block;
+	}
+
 	.about .team .member {
 		margin-top: 92px;
 		padding: 0px 10px;
@@ -1270,7 +1285,10 @@
 	}
 
 	.contact .title, .contact .subtitle {
-		
+	}
+
+	.break{
+		word-break: break-all;
 	}
 
 	.contact .subtitle {
