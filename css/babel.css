@@ -113,10 +113,14 @@
 		margin-right: 0px;
 	}
 
+	header .navigation li:hover ul {
+		display: block;
+	}
+
 	header .navigation li:hover, header .navigation li.active {
 		opacity: 1;
 	}
-
+	
 	header .navigation li ul {
 		background-color: #000000;
 		background-image: url(../img/misc/menu-item-active.png);
@@ -130,6 +134,8 @@
 		text-align: left;
 		z-index: 9999;
 	}
+
+
 
 	header .navigation li ul li {
 		display: block;
