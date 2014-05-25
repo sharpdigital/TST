@@ -7,7 +7,7 @@
 	<!-- Basic
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Detalles Bancarios - Tourism School Toledo</title>
+	<title>Contactos - Tourism School Toledo</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="@dontlikelimits">
@@ -69,17 +69,17 @@
 					<div class="navigation">
 						<ul>
 							<li data-url="index.html">Home</li>
-							<li data-url="about.html">Introducción</li>
-							<li data-url="courses.html">Cursos</li>
-							<li data-url="progress-and-pathways.html">Progress &amp; Pathways</li>
-							<li class="active">Admissions
+							<li data-url="introduccion.html">Introducción</li>
+							<li data-url="cursos.html">Cursos</li>
+							<li data-url="progreso.html">Progreso</li>
+							<li>Admissions
 								<ul>
-									<li class="active" data-url="bankdetails.html">Detalles Bancarios</li>
-									<li data-url="registration.html">Registration</li>
-									<li data-url="termsandconditions.html">Términos y condiciones</li>
+									<li data-url="detalles-bancarios.html">Detalles Bancarios</li>
+									<li data-url="formulario-de-solicitud.html">Formulario de solicitud</li>
+									<li data-url="terminos-y-condiciones.html">Términos y condiciones</li>
 								</ul>
 							</li>
-							<li data-url="contact.html">Contactos</li>
+							<li class="active" data-url="contactos.html">Contactos</li>
 						</ul>
 					</div>
 					<!-- navigation -->
@@ -91,9 +91,7 @@
 		</header>
 		<!-- header -->
 
-
-		<!-- section -->
-		<section class="about">
+		<section class="contact">
 
 			<div class="cover">
 
@@ -102,9 +100,8 @@
 					<!-- container -->
 					<div class="container">
 
-						<h3 class="title">Detalles Bancarios</h3>
+						<h3 class="title">Contactos</h3>
 						<div class="devider"></div>
-
 					</div>
 					<!-- container -->
 
@@ -112,35 +109,67 @@
 
 			</div>
 
-			<div class="story offset">
+			<div class="offset">
 
 				<!-- container -->
 				<div class="container">
 
-					<h4 class="title">Detalles Bancarios</h4>
-						<div class="devider"></div>
-						<p class="text alignjustify">
-							<table>
-								<tr>
-									<td class="alignleft title">Bank Name:</td>
-									<td class="alignleft">Ibercaja</td>
-								</tr>
-								<tr>
-									<td class="alignleft title">Abaraja Oficina:</td>
-									<td class="alignleft">Toledo 1</td>
-								</tr>
-								<tr>
-									<td class="alignleft title">Number de la Cuesta:</td>
-									<td class="alignleft">Hospitality and Tourism School in Toledo</td>
-								</tr>
-								<tr>
-									<td class="alignleft title">Numerous de Cuesta:</td>
-									<td class="alignleft">20857758240330294246</td>
-								</tr>
-							</table>
-						</p>
+					<div class="two-thirds column">
 
-						<p class="justify">Should you require any further details at all in relation to any part of the online payment process, please email us on <a href="mailto:info@tourismschooltoledo.com">info@tourismschooltoledo.com</a></p>
+						<form method="post" action="contact.php">
+
+							<p>
+					        	<input type="text" name="name" id="name" placeholder="NAME" />
+							</p>
+
+							<p>
+					        	<input type="text" name="email" id="email" placeholder="EMAIL" />
+							</p>
+
+							<p>
+					        	<input type="text" name="subject" id="subject" placeholder="SUBJECT" />
+							</p>
+
+							<p>
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="45" rows="10"></textarea>
+							</p>
+
+					        <p>
+					        	<button id="submit">Submit</button>
+					        </p>
+
+					    </form>
+
+					   	<div class="message-success">
+							<h6>Your message has been sent. Thank you!</h6>
+						</div>
+
+						<div class="message-error">
+							<h6>Sorry your message can not be sent :(</h6>
+						</div>
+
+					</div>
+
+					<div class="one-third column">
+						<div class="info">
+							<h6 class="title">Contactos</h6>
+							<h6 class="subtitle">Emilio Gail</h6>
+							<h6 class="subtitle">Maria Jesús Jerez</h6>
+							<h6 class="subtitle">info@tourismschooltoledo.com</h6>
+							<h6 class="subtitle">IES Universidad Laboral de Toledo<br>
+							 Avda. de Europa 28<br>45003 Toledo</h6>
+							<h6 class="subtitle">Teléfono: 925223400<br>Móvil: 647393355</h6>
+						</div>
+
+
+						<div class="info">
+
+							</div>
+						</div>
+
+					</div>
+
 
 				</div>
 				<!-- container -->
