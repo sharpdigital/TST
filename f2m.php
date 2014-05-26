@@ -1,6 +1,6 @@
 <?php
 
-$to = 'janos@csikos.co.uk'; // Replace with your email address
+$to = 'csikosjanos@gmail.com';
 
 $success = false;
 
@@ -15,6 +15,8 @@ if($to && !empty($_POST)) {
 	
 	$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
 	$headers .= "From: Website form <noreply@tourismschooltoledo.com>\r\n";
+
+	$subject = 'Message form the website';
 	
 	$msg = utf8_decode($msg);
 	
