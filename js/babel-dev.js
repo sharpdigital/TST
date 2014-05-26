@@ -77,8 +77,12 @@ jQuery(document).ready(function($) {
 	    directionNav: false
  	});
 
- 	$(".home button.welcome").click(function(){
+ 	$(".home.en button.welcome").click(function(){
 		window.open('about.html', '_self');
+	});
+
+ 	$(".home.es button.welcome").click(function(){
+		window.open('introduccion.html', '_self');
 	});
 
 	//$(".home video").prop('muted', homeVideoMuted);
