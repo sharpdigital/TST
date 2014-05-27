@@ -3,6 +3,9 @@
  * Copyright 2014 Limitless LLC
  */
 
+
+
+
 jQuery(document).ready(function($) {
    'use strict';
 
@@ -394,10 +397,10 @@ function fixSizes() {
 
 	}
 		
-	var video = document.getElementById("movie");
-	document.addEventListener('touchstart', function(event) {
-		if(video) { video.play(); }
-	}, false);
+	// var video = document.getElementById("movie");
+	// document.addEventListener('touchstart', function(event) {
+	// 	if(video) { video.play(); }
+	// }, false);
 
 	$(".vertical-center").each(function() {
 		$(this).css('margin-top', ($(this).parent().height() - $(this).height()) / 2);
