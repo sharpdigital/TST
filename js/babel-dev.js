@@ -3,6 +3,9 @@
  * Copyright 2014 Limitless LLC
  */
 
+
+
+
 jQuery(document).ready(function($) {
    'use strict';
 
@@ -77,8 +80,12 @@ jQuery(document).ready(function($) {
 	    directionNav: false
  	});
 
- 	$(".home button.welcome").click(function(){
+ 	$(".home.en button.welcome").click(function(){
 		window.open('about.html', '_self');
+	});
+
+ 	$(".home.es button.welcome").click(function(){
+		window.open('introduccion.html', '_self');
 	});
 
 	//$(".home video").prop('muted', homeVideoMuted);
@@ -273,44 +280,29 @@ jQuery(document).ready(function($) {
 	//Contact
 	$('#submit').click(function(){ 
 
-		$('input#name').removeClass("input-error");
-		$('input#subject').removeClass("input-error");
-		$('textarea#message').removeClass("input-error");
-		$('input#email').removeClass("input-error");
-		
-		var error = false; 
-		var name = $('input#name').val(); 
-		if(name == "" || name == " ") { 
-			error = true; 
-			$('input#name').addClass("input-error");
-		} 
+		$('.input-error').removeClass('input-error');
+		$('#agreed').parent().css('background-color','');
 
-		var subject = $('input#subject').val(); 
-		if(subject == "" || subject == " ") { 
-			error = true; 
-			$('input#subject').addClass("input-error");
-		}
 		
-		var msg = $('textarea#message').val(); 
-		if(msg == "" || msg == " ") {
+		var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+		var error = false;
+
+		$.each($('[required]'), function (idx, el) {
+
+
+			if (!$(el).val().trim() || ($(el).attr('type') && $(el).attr('type').toLowerCase() === 'email' && !email_compare.test($(el).val().trim()))) {
+				$(el).addClass('input-error');
+				error = true;
+			}
+
+		});
+
+		if ($('#agreed').length && !$('#agreed').is(':checked')) {
 			error = true;
-			$('textarea#message').addClass("input-error");
-			
-		}
-		
-		var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i; 
-		var email = $('input#email').val(); 
-		if (email == "" || email == " ") { 
-			$('input#email').addClass("input-error");
-			error = true;
-		}else if (!email_compare.test(email)) { 
-			$('input#email').addClass("input-error");
-			error = true;
+			$('#agreed').parent().css('background-color','#E7ADAD');
 		}
 
-		if(error == true) {
-			return false;
-		}
+		if (error) { return false; }
 
 		var data_string = $('.contact form').serialize(); 
 		
@@ -322,10 +314,9 @@ jQuery(document).ready(function($) {
 			success: function(message) {
 				if(message === 'ok'){
 					$('.message-success').fadeIn('slow');
-					$('input#name').val('');
-					$('input#email').val('');
-					$('input#subject').val('');
-					$('textarea#message').val('');
+					$('input').val('');
+					$('textarea').val('');
+					$('#agreed').parent().css('background-color','');			
 				}
 				else{
 					$('.message-error').fadeIn('slow');
@@ -406,10 +397,10 @@ function fixSizes() {
 
 	}
 		
-	var video = document.getElementById("movie");
-	document.addEventListener('touchstart', function(event) {
-		if(video) { video.play(); }
-	}, false);
+	// var video = document.getElementById("movie");
+	// document.addEventListener('touchstart', function(event) {
+	// 	if(video) { video.play(); }
+	// }, false);
 
 	$(".vertical-center").each(function() {
 		$(this).css('margin-top', ($(this).parent().height() - $(this).height()) / 2);

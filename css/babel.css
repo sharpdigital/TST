@@ -24,11 +24,69 @@
 	#Forms
 	#Misc */
 
+/*	.home .cover {
+		background-image: url(../img/backgrounds/home.jpg);
+	}
+*/
 
+	.about .cover.about {
+		background-image: url(../img/backgrounds/about.jpg);
+	}
+
+	.about .cover.bankdetails {
+		background-image: url(../img/backgrounds/bankdetails.jpg);
+	}
+
+	.about .cover.progress {
+		background-image: url(../img/backgrounds/progress_and_pathways.jpg);
+	}
+
+
+
+
+
+/*	.works .cover {
+		background-image: url(../img/backgrounds/works.jpg);
+	}
+*/
+	.services .cover.courses {
+		background-image: url(../img/backgrounds/courses.jpg);
+	}
+
+/*	.history .cover {
+		background-image: url(../img/backgrounds/history.jpg);
+	}
+*/
+/*
+	.blog .cover {
+		background-image: url(../img/backgrounds/blog.jpg);
+	}
+*/
+
+	.contact .cover.contact {
+		background-image: url(../img/backgrounds/contact.jpg);
+	}
+
+	.contact .cover.registration {
+		background-image: url(../img/backgrounds/registration.jpg);
+	}
+
+	.contact .cover.tnc {
+		background-image: url(../img/backgrounds/terms-and-conditions.jpg);
+	}
+
+
+
+
+
+/*	.notfound .cover {
+		background-image: url(../img/backgrounds/notfound.jpg);
+	}
+*/
 
 /* #Header
 ================================================== */
-	
+
 	header {
 		background-color: rgba(0, 0, 0, 1);
 		height: 80px;
@@ -113,10 +171,14 @@
 		margin-right: 0px;
 	}
 
+	header .navigation li:hover ul {
+		display: block;
+	}
+
 	header .navigation li:hover, header .navigation li.active {
 		opacity: 1;
 	}
-
+	
 	header .navigation li ul {
 		background-color: #000000;
 		background-image: url(../img/misc/menu-item-active.png);
@@ -131,6 +193,8 @@
 		z-index: 9999;
 	}
 
+
+
 	header .navigation li ul li {
 		display: block;
 		margin-bottom: 10px;
@@ -143,10 +207,6 @@
 
 	.home {
 
-	}
-
-	.home .cover {
-		background-image: url(../img/backgrounds/home.jpg);
 	}
 
 	.home video {
@@ -203,11 +263,7 @@
 ================================================== */
 
 	.about {
-		
-	}
 
-	.about .cover {
-		background-image: url(../img/backgrounds/about.jpg);
 	}
 
 	.about .story .devider {
@@ -219,6 +275,25 @@
 		float: none;
 		margin: 0px auto;
 		position: relative;
+	}
+
+	.about .middle {
+		padding-top: 0px !important;
+	}
+
+	.justify {
+		text-align: justify;
+	}
+
+	ol ol {
+		list-style-type: lower-alpha;
+	}
+	.gender {
+		display: inline-block;
+	}
+
+	.about .reduce2nd {
+		padding-top: 0px !important;
 	}
 
 	.about .team {
@@ -346,12 +421,8 @@
 
 	}
 
-	.works .cover {
-		background-image: url(../img/backgrounds/works.jpg);
-	}
-
 	.works .grid {
-		padding-top: 0px !important; 
+		padding-top: 0px !important;
 	}
 
 	.works .filter {
@@ -486,7 +557,7 @@
 ================================================== */
 
 	.project {
-		
+
 	}
 
 	.project .offset {
@@ -700,10 +771,6 @@
 
 	}
 
-	.services .cover {
-		background-image: url(../img/backgrounds/services.jpg);
-	}
-
 	.services .grid {
 		padding-top: 0px !important;
 	}
@@ -767,11 +834,7 @@
 ================================================== */
 
 	.history {
-		
-	}
 
-	.history .cover {
-		background-image: url(../img/backgrounds/history.jpg);
 	}
 
 	.history .milestone {
@@ -884,10 +947,6 @@
 
 	}
 
-	.blog .cover {
-		background-image: url(../img/backgrounds/blog.jpg);
-	}
-
 	.blog .posts {
 
 	}
@@ -997,7 +1056,7 @@
 	}
 
 	.blog .widget .search {
-		
+
 	}
 
 	.blog .widget .search input {
@@ -1021,7 +1080,7 @@
 ================================================== */
 
 	.article {
-		
+
 	}
 
 	.article .offset {
@@ -1227,10 +1286,6 @@
 	.contact {
 	}
 
-	.contact .cover {
-		background-image: url(../img/backgrounds/contact.jpg);
-	}
-
 	.contact form {
 		text-align: left;
 	}
@@ -1269,8 +1324,12 @@
 		text-align: left;
 	}
 
+	.break {
+		word-break: break-all;
+	}
+
 	.contact .title, .contact .subtitle {
-		
+
 	}
 
 	.contact .subtitle {
@@ -1392,10 +1451,6 @@
 
 /* #Not Found
 ================================================== */
-
-	.notfound .cover {
-		background-image: url(../img/backgrounds/notfound.jpg);
-	}
 
 	.notfound .overlay {
 		bottom: 0px;

@@ -45,6 +45,20 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
+	tr {
+		border: solid #cccccc;
+		border-width: 0 0 1px 0;
+	}
+
+	td {
+		padding: 15px 20px;
+	}
+
+	td.title {
+		color: inherit;
+		text-transform: uppercase;
+	}
+
 
 /* #Basic Styles
 ================================================== */
@@ -82,7 +96,7 @@
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
-	blockquote { 
+	blockquote {
 		background-image: url(../img/misc/blockquote.png);
 		background-position: left top;
 		background-repeat: no-repeat;
@@ -117,6 +131,7 @@
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
+	ul.discinside { list-style: disc inside; }
 	ul ul, ul ol,
 	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
 	ul ul li, ul ol li,
@@ -165,7 +180,7 @@
 		border-top: none !important;
 		border-left: none !important;
 		border-right: none !important;
-		padding: 17px 10px !important;	
+		padding: 17px 10px !important;
 		width: 100% !important;
 	}
 
@@ -214,11 +229,11 @@
 ================================================== */
 
 	form {
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
 	}
 
 	fieldset {
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
 	}
 
 	input[type="text"],
@@ -226,7 +241,7 @@
 	input[type="email"],
 	textarea,
 	select {
-		background: #ffffff; 
+		background: #ffffff;
 		border: 1px solid #cccccc;
 		color: #aaaaaa;
 		display: block;
@@ -237,7 +252,6 @@
 		margin-bottom: 20px;
 		outline: none;
 		padding: 15px 10px;
-		text-transform: uppercase;
 	}
 
 	label {
@@ -250,7 +264,7 @@
 	}
 
 	select {
-		padding: 0; 
+		padding: 0;
 	}
 
 	input[type="text"]:focus,
@@ -262,7 +276,7 @@
 	}
 
 	textarea {
-		min-height: 60px; 
+		min-height: 60px;
 		resize: none;
 		width: 100% !important;
 	}
@@ -271,22 +285,22 @@
 	legend {
 		display: block;
 		font-weight: bold;
-		font-size: 13px;  
+		font-size: 13px;
 	}
 
 	select {
-		width: 220px; 
+		width: 220px;
 	}
 
 	input[type="checkbox"] {
-		display: inline; 
+		display: inline;
 	}
 
 	label span,
 	legend span {
 		font-weight: normal;
 		font-size: 13px;
-		color: #444; 
+		color: #444;
 	}
 
 /* #FlexSlider
@@ -363,7 +377,7 @@
 		padding: 200px 0px;
 	}
 
-	.wrapper {	
+	.wrapper {
 		position: relative;
 		width: 100%;
 		overflow: hidden !important;
@@ -378,7 +392,7 @@
 	.devider {
 		background-color: #000000;
 		height: 1px;
-		margin: 23px auto 0px; 
+		margin: 23px auto 0px;
 		width: 100px;
 	}
 
@@ -469,6 +483,8 @@
 	.aligncenter { text-align: center; }
 
 	.alignleft { text-align: left; }
+
+	.alignjustify { text-align: justify; }
 
 	.alignright { text-align: right; }
 
