@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 	var windowWidth = $(window).width();
 
 	//Basics
-	$(document).scroll(function() { 
+	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		if($(this).scrollTop()>10) {
 			$('header').stop().animate({ backgroundColor: 'rgba(0,0,0,1)' }, 'fast');
@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
 	//$(".home video").prop('muted', homeVideoMuted);
 	//Home
 
-	//About 
+	//About
 	$(".about .team .image, .works .quotes .image, .services .filter li, .comment-author .photo").each(function() {
 		$(this).css("background-image", "url("+$(this).attr("data-url")+")");
 	});
@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
 	$(".about .fact, .about .team .member").hover(function(e){
 		$(".about .fact, .about .team .member").stop().animate({ opacity: 0.5 }, 'slow');
 		$(this).stop().animate({ opacity: 1 }, 'slow');
-	}, function(){ 
+	}, function(){
 		$(".about .fact, .about .team .member").stop().animate({ opacity: 1 }, 'slow');
 	});
 
@@ -136,7 +136,7 @@ jQuery(document).ready(function($) {
 
 	$(".work .info").hover(function(e){
 		$(this).stop().animate({ opacity: 1 }, 'slow');
-	}, function(){ 
+	}, function(){
 		$(this).stop().animate({ opacity: 0 }, 'slow');
 	});
 
@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 	$(".works .quote").hover(function(e){
 		$(".works .quote").stop().animate({ opacity: 0.5 }, 'slow');
 		$(this).stop().animate({ opacity: 1 }, 'slow');
-	}, function(){ 
+	}, function(){
 		$(".works .quote").stop().animate({ opacity: 1 }, 'slow');
 	});
 
@@ -278,12 +278,12 @@ jQuery(document).ready(function($) {
 	//History
 
 	//Contact
-	$('#submit').click(function(){ 
+	$('#submit').click(function(){
 
 		$('.input-error').removeClass('input-error');
 		$('#agreed').parent().css('background-color','');
 
-		
+
 		var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
 		var error = false;
 
@@ -304,19 +304,19 @@ jQuery(document).ready(function($) {
 
 		if (error) { return false; }
 
-		var data_string = $('.contact form').serialize(); 
-		
+		var data_string = $('.contact form').serialize();
+
 		$.ajax({
 			type: "POST",
 			url: $('.contact form').attr('action'),
 			data: data_string,
-			
+
 			success: function(message) {
 				if(message === 'ok'){
 					$('.message-success').fadeIn('slow');
 					$('input').val('');
 					$('textarea').val('');
-					$('#agreed').parent().css('background-color','');			
+					$('#agreed').parent().css('background-color','');
 				}
 				else{
 					$('.message-error').fadeIn('slow');
@@ -324,7 +324,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 
-		return false; 
+		return false;
 	});
 	//Contact
 
@@ -355,7 +355,9 @@ $(window).load(function() {
 	}
 
 
-	$(".loader").delay(1000).fadeOut('slow');
+  //$(".loader").delay(1000).fadeOut('slow');
+  //$(".loader").fadeOut('slow');
+  $(".loader").hide();
 });
 
 
@@ -373,7 +375,7 @@ function fixSizes() {
 
 	var rat = windowWidth / windowHeight;
 
-	
+
 
 	if (rat > (16/9)) {
 
@@ -396,7 +398,7 @@ function fixSizes() {
 		$(".home video").css('margin-left', '-'+vc+'px');
 
 	}
-		
+
 	// var video = document.getElementById("movie");
 	// document.addEventListener('touchstart', function(event) {
 	// 	if(video) { video.play(); }
