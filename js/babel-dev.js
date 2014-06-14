@@ -213,16 +213,16 @@ jQuery(document).ready(function($) {
 		$('html,body').animate({scrollTop: y}, 'slow');
 	});
 
-	$('.services .service').each(function() {
-		var srv = $('.services .service').index($(this));
-		if (srv%2 != 0) {
-			$(this).addClass("dark");
-			$(this).find(".image").css('padding-left', "20px");
-			$(this).find(".info").css('padding-right', "20px");
-		} else {
-			$(this).find(".info").css('padding-left', "20px");
-		}
-	});
+	// $('.services .service').each(function() {
+	// 	var srv = $('.services .service').index($(this));
+	// 	if (srv%2 != 0) {
+	// 		$(this).addClass("dark");
+	// 		$(this).find(".image").css('padding-left', "20px");
+	// 		$(this).find(".info").css('padding-right', "20px");
+	// 	} else {
+	// 		$(this).find(".info").css('padding-left', "20px");
+	// 	}
+	// });
 
 	var sectionOffset = '15%';
 	$(".services .service").waypoint({
