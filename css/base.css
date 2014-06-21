@@ -339,7 +339,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 470px;
+		height: 330px;
 		-webkit-transition: all .8s ease 0;
 		-moz-transition: all .8s ease 0;
 		-ms-transition: all .8s ease 0;
@@ -349,7 +349,7 @@
 
 	.cover .overlay {
 		height: 100%;
-		padding-top: 210px;
+		padding-top: 140px;
 	}
 
 	.cover .title {
@@ -374,7 +374,7 @@
 	}
 
 	.offset {
-		padding: 200px 0px;
+		padding: 100px 0px;
 	}
 
 	.wrapper {

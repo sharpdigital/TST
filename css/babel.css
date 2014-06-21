@@ -1375,7 +1375,7 @@
 	}
 
 	footer .offset {
-		padding: 30px 0px 100px !important;
+		padding: 30px 0px 50px !important;
 	}
 
 	footer .top {
@@ -1406,7 +1406,7 @@
 	}
 
 	footer .social {
-		padding-top: 60px;
+		padding-top: 30px;
 	}
 
 	footer .social li {
