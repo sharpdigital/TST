@@ -49,8 +49,12 @@
 		background-image: url(../img/backgrounds/works.jpg);
 	}
 */
-	.services .cover.courses {
+	.cover.courses {
 		background-image: url(../img/backgrounds/courses.jpg);
+	}
+
+	.cover.jobs {
+		background-image: url(../img/backgrounds/jobs.jpg);
 	}
 
 /*	.history .cover {
