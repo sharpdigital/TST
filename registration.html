@@ -2,11 +2,11 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]--><head>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]--><head>
 	<!-- Basic
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Formulario de solicitud - International Tourism School Toledo</title>
+	<title>Registration - Tourism School Toledo</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="@dontlikelimits">
@@ -26,9 +26,9 @@
 
 	<!-- Fonts
   ================================================== -->
-	<link href='./fonts/Montserrat/Montserrat.css' rel='stylesheet' type='text/css'>
-	<link href='./fonts/SourceSansPro/SourceSansPro.css' rel='stylesheet' type='text/css'>
-	<link href='./fonts/pe-icon-7-stroke/pe-icon-7-stroke.css' rel='stylesheet' type='text/css'>
+	<link href="./fonts/Montserrat/Montserrat.css" rel="stylesheet" type="text/css">
+	<link href="./fonts/SourceSansPro/SourceSansPro.css" rel="stylesheet" type="text/css">
+	<link href="./fonts/pe-icon-7-stroke/pe-icon-7-stroke.css" rel="stylesheet" type="text/css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,7 +50,7 @@
 		<!-- header -->
 		<header>
 
-		<!-- container -->
+			<!-- container -->
 			<div class="container clearfix">
 
 				<div class="two columns">
@@ -67,20 +67,19 @@
 					<!-- navigation -->
 					<div class="navigation">
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="presentacion.html">Quiénes Somos</a></li>
-							<li><a href="cursos.html">Cursos</a></li>
-							<li><a href="progreso.html">Progreso</a></li>
-							<li class="active"><span>Admisión</span>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="progress-and-pathways.html">Progress &amp; Pathways</a></li>
+							<li class="active"><span>Admissions</span>
 								<ul>
-									<li><a href="detalles-bancarios.html">Detalles Bancarios</a></li>
-									<li><a class="active" href="formulario-de-solicitud.html">Formulario de solicitud</a></li>
-									<li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+									<li><a href="bankdetails.html">Bank details</a></li>
+									<li><a class="active" href="registration.html">Registration</a></li>
+									<li><a href="termsandconditions.html">Terms and Conditions</a></li>
 								</ul>
 							</li>
-							<li><a href="trabajo.html">Trabajo</a></li>
-							<li><a href="contactos.html">Contactos</a></li>
-							<li><a href="en/index.html">English</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="es/index.html">Español</a></li>
 						</ul>
 					</div>
 					<!-- navigation -->
@@ -101,7 +100,7 @@
 					<!-- container -->
 					<div class="container">
 
-						<h1 class="title">Formulario de solicitud</h1>
+						<h1 class="title">Registration</h1>
 						<div class="devider"></div>
 
 					</div>
@@ -120,77 +119,86 @@
 					<div class="two-thirds column">
 
 						<div>
-							<h6 class="alignleft">Plazos De Solicitud:</h6>
+							<h6 class="alignleft">APPLICATION DEADLINES</h6>
 
-							<p class="text alignjustify">Debido a la gran demanda de nuestros programas, las plazas son limitadas. Por lo tanto, recomendamos que se soliciten lo antes posible, teniendo en cuenta las fechas límite para las becas en su caso.</p>
+							<p class="text alignjustify">Due to a high demand for our Programmes, places are limited. We therefore advise that you apply as early as possible, taking into consideration the deadlines for scholarships where appropriate.</p>
 
-							<h6  class="alignleft">Condiciones De Solicitud:</h6>
+							<h6  class="alignleft">CONDITIONS OF APPLICATION</h6>
 
-							<p class="text alignjustify">Antes de rellenar este formulario, por favor asegúrese de haber leído los Términos y Condiciones Generales de la Escuela Universitaria de Turismo Británica, así como los Términos y Condiciones para nuestros programas OTHM; que aparece en nuestra página web: <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>.
-
+							<p class="text alignjustify">Before completing this form, please ensure that you have read the full International School of Tourism and Hotel Management in Toledo General Terms and Conditions, as well as and the Key Terms and Conditions for our OTHM Programmes; displayed on our website, <a href="termsandconditions.html" target="_blank">Terms and Conditions</a>.
 						</div>
 
-						<form method="post" action="f2m.php">
+						<form method="post" action="./f2m.php">
 							<p>
-								<label for="firstname">NOMBRE<span>*</span></label>
+								<label for="firstname">First Name<span>*</span></label>
                 				<input type="text" id="firstname" name="firstname" required>
                 			</p>
 
                 			<p>
-                				<label for="lastname">APELLIDO<span>*</span></label>
+                				<label for="lastname">Last Name<span>*</span></label>
                 				<input type="text" id="lastname" name="lastname" required>
                 			</p>
 
                 			<p>
-                				<label for="DateofBirth">FECHA DE NACIMIENTO<span>*</span></label>
+                				<label for="DateofBirth">Date of Birth<span>*</span></label>
                 				<input type="text" id="DateofBirth" name="DateofBirth" required>
                 			</p>
 
-							<p>
-								<label>Sexo</label>
-					        	<label><input checked type="radio" name="gender" value="male"/>Hombre</label>
-					        	<label><input type="radio" name="gender" value="female"/>Mujer</label>
-							</p>
-
               				<p>
-              					<label for="email">DIRECCIÓN DE CORREO ELECTRÓNICO<span>*</span></label>
+              					<label for="email">Email<span>*</span></label>
 								<input type="email" name="email" id="email" required>
 							</p>
 
 							<p>
-								<label for="idno">DNI<span>*</span></label>
-					        	<input type="text" name="idno" id="idno" required>
+								<label>Gender</label>
+					        	<label><input checked type="radio" name="gender" value="male" placeholder="Male" />Male</label>
+					        	<label><input type="radio" name="gender" value="female" placeholder="Female"/>Female</label>
 							</p>
 
 							<p>
-								<label for="address">DIRECCIÓN POSTAL<span>*</span></label>
+								<label for="address">Correspondence Address<span>*</span></label>
 								<textarea name="address" id="address" cols="45" rows="6" required></textarea>
 							</p>
 
 							<p>
-								<label for="work">MÉRITOS / EXPERIENCIA LABORAL<span>*</span></label>
-								<textarea name="work" id="work" cols="45" rows="10" required></textarea>
+								<label for="idno">Identification Number<span>*</span></label>
+					        	<input type="text" name="idno" id="idno" required>
+							</p>
+							<p>
+								<label>Course you are applieng for:</label>
+					        	<label><input checked type="radio" name="coursetype" value="othmlevel4" placeholder="othmlevel4" />OTHM Level 4 Professional Certificate</label>
+					        	<label><input type="radio" name="coursetype" value="othmlevel5" placeholder="othmlevel5" />OTHM Level 5 Professional Diploma</label>
+					        	<label><input type="radio" name="coursetype" value="othmlevel6" placeholder="othmlevel6" />OTHM Level 6 Professional Diploma</label>
+							</p>
+							<p>
+								<label for="work">Qualification/Work Experience<span>*</span></label>
+								<textarea name="work" id="work" cols="45" rows="15" required></textarea>
 							</p>
 
 							<p>
-								<label for="reason">¿POR QUÉ USTED DESEA SOLICITAR ESTE CURSO?<span>*</span></label>
-								<textarea name="reason" id="reason" cols="45" rows="10" required></textarea>
+								<label>Level of English</label>
+					        	<label><input checked type="radio" name="levelofenglish" value="intermediate" placeholder="intermediate" />Intermediate</label>
+					        	<label><input type="radio" name="levelofenglish" value="advanced" placeholder="advanced" />Advanced</label>
+							</p>
+
+							<p>
+								<label for="reason">Why do you want to apply for this course?<span>*</span></label>
+								<textarea name="reason" id="reason" cols="45" rows="15" required></textarea>
 							</p>
 
 
 							<p>
-								<label>¿CÓMO SUPO DE NOSOTROS?</label>
-					        	<label><input checked type="radio" name="media" value="friend" placeholder="friend" />Amigos</label>
-					        	<label><input type="radio" name="media" value="radio" />Radio</label>
-					        	<label><input type="radio" name="media" value="internet" />Internet</label>
-					        	<label><input type="radio" name="media" value="newspaper" />Períodico</label>
-					        	<label><input type="radio" name="media" value="brochure" />Follefo</label>
-					        	<label><input type="radio" name="media" value="brochure" />Otros</label>
+								<label>How did you hear about us?</label>
+					        	<label><input checked type="radio" name="media" value="friend" placeholder="friend" />Friend</label>
+					        	<label><input type="radio" name="media" value="radio" placeholder="radio" />Radio</label>
+					        	<label><input type="radio" name="media" value="internet" placeholder="internet" />Internet</label>
+					        	<label><input type="radio" name="media" value="newspaper" placeholder="newspaper" />Newspaper</label>
+					        	<label><input type="radio" name="media" value="brochure" placeholder="brochure" />Brochure</label>
 					        </p>
 
 
 							<p class="justify">
-								<input type="checkbox" name="agreed" id="agreed" value="yes" required>Al registrarse para un Programa de la Escuela Universitaria de Turismo Británica, Yo (nombre) reconozco que he leído, entendido y estoy de acuerdo con la totalidad de (i) Términos y Condiciones Generales. El registro de empresa en un programa OTHM implica la aceptación plena e irrevocable de nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>.
+								<input type="checkbox" id="agreed" name="agreed" value="yes" required>On registering for an ISTHI Programme I acknowledge that I have read, understood and agree to abide by the full (i) General Terms and Conditions. Registration on an OTHM programme constitutes full and irrevocable acceptance of our <a href="termsandconditions.html" target="_blank">Terms and Conditions</a>.
 							</p>
 
 					        <p>
@@ -259,7 +267,7 @@
 				<div class="container">
 
 					<div class="sixteen columns">
-						<h6 class="copyright">Copyright © 2014 International Tourism School Toledo</h6>
+						<h6 class="copyright">Copyright © 2014 Tourism School Toledo</h6>
 					</div>
 
 				</div>
