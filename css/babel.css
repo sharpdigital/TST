@@ -184,13 +184,13 @@
 		display: block;
 	}
 
-	header .navigation li a:hover, 
+	header .navigation li a:hover,
 	header .navigation li a.active,
-	header .navigation li span:hover, 
+	header .navigation li span:hover,
 	header .navigation li span.active {
 		opacity: 1;
 	}
-	
+
 	header .navigation li ul {
 		background-color: #000000;
 		background-image: url(../img/misc/menu-item-active.png);
@@ -780,6 +780,7 @@
 ================================================== */
 
 	.services {
+		margin: 50px 0;
 
 	}
 
