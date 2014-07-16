@@ -334,7 +334,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$("footer .social li").click(function(){
-		var url = $(this).attr("data-url");
+		var url = $(this).find('a').attr("href");
 		window.open(url, '_blank');
 	});
 	//Footer
