@@ -1,6 +1,7 @@
 <?php
 
-$to = 'csikosjanos@gmail.com';
+//$to = 'csikosjanos@gmail.com';
+$to = 'info@tourismschooltoledo.com';
 
 $success = false;
 
